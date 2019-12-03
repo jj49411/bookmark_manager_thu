@@ -1,12 +1,13 @@
-require 'bookmarks'
+require 'bookmark'
 
-describe Bookmarks do
+describe Bookmark do
 
   describe "#all" do
 
     it "should display all my bookmarks" do
-      bookmarks = Bookmarks.all
+      bookmarks = Bookmark.all
 
+      p bookmarks
       expect(bookmarks).to include("http://www.makersacademy.com")
       expect(bookmarks).to include("http://www.destroyallsoftware.com")
       expect(bookmarks).to include("http://www.google.com")
